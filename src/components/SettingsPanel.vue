@@ -134,6 +134,41 @@
             </div>
           </div>
         </div>
+        <div v-if="activeTab === 'donate'" class="donate-section">
+          <p>
+            与手动 P
+            图的方式相比，这个模拟器的优点在于处理多人任务的效率更高，但前期设计耗费时间更多。
+            所以采用众筹捐助模式，如果你觉得这个项目对你有帮助，可以通过以下方式支持我：
+          </p>
+          <p>
+            <strong>捐助目标：</strong> 预期达到
+            <strong>20 次捐助</strong> 后继续更新后续实验内容。
+          </p>
+          <div class="donate-qr">
+            <img src="/assets/donate_qr.jpg" alt="捐助二维码" />
+            <p>扫码捐助，感谢您的支持！🙏</p>
+          </div>
+          <p>
+            如果你发现项目输出的某些地方不合理，可能是因为编辑时的失误，请通过以下链接反馈：
+            <a
+              href="https://github.com/2061360308/WebUbuntuTerminalEmulator/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              提交问题反馈
+            </a>
+          </p>
+          <h3>关于实验和项目处理范围</h3>
+          <p>这个课程包含以下三个实验：</p>
+          <ul>
+            <li>虚拟机安装和 Hadoop 安装使用</li>
+            <li>HDFS</li>
+            <li>HBase 和 MapReduce</li>
+          </ul>
+          <p>
+            本工具主要针对控制台输出的截图，四个实验中前两个实验相关截图需要多一些，后续实验多为软件界面截图（这些界面截图大家都一样，不用担心）。
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -160,6 +195,7 @@ const activeTab = ref("settings");
 const tabs = [
   { name: "settings", label: "设置" },
   { name: "experiments", label: "实验" },
+  { name: "donate", label: "捐助/支持与反馈" },
 ];
 </script>
 
@@ -292,5 +328,66 @@ select {
   display: block;
   margin-top: 8px;
   font-size: 14px;
+}
+</style>
+
+<style scoped>
+/* .donate-section {
+  padding: 16px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  line-height: 1.6;
+} */
+
+/* .donate-section h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #333;
+} */
+
+.donate-section p {
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.donate-section strong {
+  color: #000;
+}
+
+.donate-section a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.donate-section a:hover {
+  text-decoration: underline;
+}
+
+.donate-qr {
+  text-align: center;
+  margin: 16px 0;
+}
+
+.donate-qr img {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.donate-qr p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.donate-section ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.donate-section ul li {
+  margin-bottom: 8px;
+  color: #555;
 }
 </style>
