@@ -42,6 +42,10 @@ const defaultWrites = `
 \x1b[1;32m# 祝你实验愉快！\x1b[0m
 
 当前版本： v${packageJson.version}
+
+\x1b[1;32m# 更新日志：\x1b[0m
+\x1b[1;36m1. v0.0.4 添加实验二 HDFS 的编程实践\x1b[0m
+
 `;
 
 const terminal = ref(null);
