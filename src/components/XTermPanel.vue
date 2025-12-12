@@ -45,8 +45,8 @@ const defaultWrites = `
 
 \x1b[1;32m# 更新日志：\x1b[0m
 \x1b[1;36m1. v0.0.4 添加实验二 HDFS 的编程实践\x1b[0m
-\x1b[1;36m2. v0.0.5 添加实验三 HBase编程实践\x1b[0m
-\x1b[1;36m3. v0.0.6 添加实验四 基于MapReduce 的编程实践\x1b[0m
+\x1b[1;36m2. v0.0.5 添加实验三 HBase编程实践（没有核对细节）\x1b[0m
+\x1b[1;36m3. v0.0.6 添加实验四 基于MapReduce 的编程实践(凭感觉编的输出)\x1b[0m
 `;
 
 const terminal = ref(null);
